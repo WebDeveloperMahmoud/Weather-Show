@@ -483,7 +483,8 @@ footer p {
         bottom: -1020px;
     }
 }
-@media (max-width:414px) {
+
+@media (max-width:465px) {
     .find-location .find {
         width: 95% !important;
     }
@@ -492,5 +493,19 @@ footer p {
     }
     footer .subscribe {
         width: 95% !important;
+    }
+    .form-section .row {
+        width: 90% !important;
+    }
+    section .transition {
+        width: 90% !important;
+    }
+    footer .subscribe {
+        width: 90% !important;
+    }
+    .contact-us-footer {
+        position: relative;
+        bottom: -1100px;
+        overflow: visible;
     }
 }
