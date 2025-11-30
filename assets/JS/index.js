@@ -21,7 +21,6 @@ toggle.addEventListener("click", function () {
 
 let navLinks = document.querySelectorAll(".nav-link");
 let currentPage = window.location.pathname.split("/").pop();
-console.log(currentPage);
 navLinks.forEach((navLink) => {
     let href = navLink.getAttribute("href");
     if (href === currentPage) {
@@ -56,7 +55,6 @@ async function getData(location) {
     date.textContent = `${now.getDate()}${months[now.getMonth() % 12]}`;
     for (let i = 0; i < day.length; i++){
         day[i].textContent = `${days[(now.getDay() + i) % 7]}`;
-        
     }
     let response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=69a89a32c2b24c61a1e174217252011&q=${location}&days=3`);
     response = await response.json();
@@ -117,5 +115,10 @@ function clearInputAftersubscribe() {
     subscribeInput.value = "";
 }
 let copyRight = document.querySelector(".copy-right");
-let year = new Date();
-copyRight.textContent = year.getFullYear();
+let copyRight1 = document.querySelector(".copy-right1");
+console.log(copyRight1);
+
+let year1 = new Date();
+let year2 = new Date();
+copyRight.textContent = year1.getFullYear();
+copyRight1.textContent = year2.getFullYear();

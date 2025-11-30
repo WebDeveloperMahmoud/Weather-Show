@@ -483,3 +483,8 @@ footer p {
         bottom: -1020px;
     }
 }
+@media (max-width:414px) {
+    .find-location .find {
+        width: 80%;
+    }
+}
