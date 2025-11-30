@@ -92,6 +92,10 @@ section .right-side textarea:focus {
 .form-section {
     overflow: visible;
 }
+.form-section .right-side input::placeholder,
+.form-section .right-side textarea::placeholder {
+    color: rgba(255, 255, 255, 0.389) !important;
+}
 @media(max-width:992px) {
     .container {
         position: absolute;
@@ -225,9 +229,11 @@ section .right-side textarea:focus {
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
+
 .find-location .find input::placeholder {
     color: gray !important;
 }
+
 .find-location .find button {
     padding: 10px 25px ;
     top: 50%;
@@ -243,6 +249,7 @@ section .right-side textarea:focus {
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
 }
+
 .row {
     left: 50%;
     transform: translateX(-50%);
@@ -260,63 +267,77 @@ section .right-side textarea:focus {
     -ms-border-radius: 10px !important;
     -o-border-radius: 10px !important;
 }
+
 .start-1 .top,
 .start-3 .top {
     background-color: #2d313d !important;
 }
+
 .start-2 .top {
     background-color: #222430 !important;
 }
+
 .day,
 .date,
 .city {
     color: RGB(191, 193, 200) !important;
 }
+
 .start-1 .bottom,
 .start-3 .bottom {
     background-color: #323544 !important;
 }
+
 .start-2 .bottom {
     background-color: #262a36 !important;
     padding-bottom: 110px !important;
 }
+
 .start-3 .bottom {
     padding-bottom: 110px !important;
 }
+
 .temp-1{
     font-size: 90px;
     font-weight: 700;
     max-width: 100px !important;
 }
+
 .temp-2,
 .temp-3 {
     font-size: 24px;
     font-weight: 700;
 }
+
 .city {
     font-size: 18px;
 }
+
 .umbrella,
 .wind,
 .compass {
     color: RGB(191, 193, 200) !important;
 }
+
 #umbrella,
 #wind,
 #compass {
     width: 22px;
     height: 22px;
 }
+
 .temp6h-1,
 .temp6h-2 {
     color: RGB(191, 193, 200) !important;
     font-size: 16px;
     font-weight: 300;
 }
+
 footer {
     background-color: #262a36;
     height: 32vh;
 }
+
 footer .subscribe {
     width: 70%;
     top: 50px;
@@ -331,6 +352,7 @@ footer .subscribe {
     flex-direction: column;
     align-items: start;
 }
+
 footer .subscribe input {
     outline: none;
     box-shadow: none;
@@ -345,14 +367,17 @@ footer .subscribe input {
     color: white !important;
     background-color: #1e202c !important;
 }
+
 footer .subscribe input:focus {
     box-shadow: none;
     border: none;
     outline: none;
 }
+
 footer .subscribe input::placeholder {
     color: RGB(191, 193, 200);
 }
+
 footer .subscribe .subscribe-button {
     padding: 8px 14px;
     border-radius: 20px;
@@ -364,12 +389,15 @@ footer .subscribe .subscribe-button {
     right: 4px;
     top: 4px;
 }
+
 footer form {
     width: 100%;
 }
+
 footer .social-content {
     top: 125px;
 }
+
 footer .social-content .soical-media {
     width: fit-content;
     left: 50%;
@@ -380,9 +408,11 @@ footer .social-content .soical-media {
     -o-transform: translateX(-50%);
     display: flex;
 }
+
 footer .social-content .soical-media a:not(:last-of-type) {
     margin-right: 25px;
 }
+
 footer .social-content .soical-media a {
     text-decoration: none;
     display: inline-block;
@@ -403,6 +433,7 @@ footer .social-content .soical-media a {
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+
 footer .social-content .soical-media i {
     font-size: 20px;
     display: inline-block;
@@ -412,16 +443,20 @@ footer .social-content .soical-media i {
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+
 footer .social-content .soical-media a:hover {
     background-color: #04a1d9;
 }
+
 footer .social-content .soical-media a:hover i {
     color: white;
 }
+
 footer p {
     top: 80%;
     left: 0;
 }
+
 .contact-us-footer {
     position: relative;
     bottom: -550px;
@@ -507,5 +542,9 @@ footer p {
         position: relative;
         bottom: -1100px;
         overflow: visible;
+    }
+    #navbarSupportedContent {
+        width: 90% !important;
+        margin-left: 20px;
     }
 }
