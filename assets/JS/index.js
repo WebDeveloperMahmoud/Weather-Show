@@ -114,11 +114,9 @@ form.addEventListener("submit", function (e) {
 function clearInputAftersubscribe() {
     subscribeInput.value = "";
 }
-let copyRight = document.querySelector(".copy-right");
-let copyRight1 = document.querySelector(".copy-right1");
-console.log(copyRight1);
 
-let year1 = new Date();
-let year2 = new Date();
-copyRight.textContent = year1.getFullYear();
-copyRight1.textContent = year2.getFullYear();
+let copyRights = document.querySelectorAll(".copy-right");
+let year = new Date();
+copyRights.forEach((copyRight) => {
+    copyRight.textContent = `${year.getFullYear()}`;
+})
