@@ -485,6 +485,12 @@ footer p {
 }
 @media (max-width:414px) {
     .find-location .find {
-        width: 80% !important;
+        width: 95% !important;
+    }
+    .row {
+        width: 95% !important;
+    }
+    footer .subscribe {
+        width: 95% !important;
     }
 }
