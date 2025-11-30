@@ -485,6 +485,6 @@ footer p {
 }
 @media (max-width:414px) {
     .find-location .find {
-        width: 80%;
+        width: 80% !important;
     }
 }
