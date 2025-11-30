@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="assets/imgs/contact2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/CSS/all.min.css">
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <div class="d-flex align-items-center w-100">
+                <div class="top-exist d-flex justify-content-between">
+                    <a class="navbar-brand fw-bold d-flex justify-content-center align-items-center" href="#"><img
+                            class="me-3" src="assets/imgs/logo@2x.png" alt="logo" title="logo"> Show Weather</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars text-white icon-bars"></i>
+                        <i class="fa-solid fa-bars-staggered d-none text-white icon-staggered"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse menue-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Live cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Photos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="d-flex justify-content-center mb-5">
+        <div class="transition"><a href="index.html">Home</a><span class="right-arrow fs-5">&rightarrow;</span><a class="active" href="contact.html">Contact</a></div>
+    </section>
+    <section class="form-section position-relative">
+        <div class="container">
+            <div class="position-relative">
+                <div class="row w-100 position-absolute top-0 start-50 translate-middle-x">
+                    <div class="left-side col-xl-6">
+                        <iframe src="https://www.google.com/maps?q=2803+Avenue+Street,+Los+Angeles&output=embed" width="100%"
+                            height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="rounded-3">
+                        </iframe>
+                        <div class="info mt-3">
+                            <p><i class="fa-solid fa-location-dot text-primary"></i> Company Name INC.2803 Avenue Street, Los Angeles
+                            </p>
+                            <p><i class="fa-solid fa-phone text-primary"></i> +1 800 314 235</p>
+                            <p><i class="fa-regular fa-envelope text-primary"></i> contact@companyname.com</p>
+                        </div>
+                    </div>
+                    <div class="right-side col-xl-6">
+                        <h2 class="text-white">Contact us</h2>
+                        <p class="text-danger-emphasis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur
+                            inventore ducimus, facilis, numquam id
+                            soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control rounded-3" id="exampleInputName1" aria-describedby="nameHelp"
+                                    placeholder="Your name...">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control rounded-3" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                    placeholder="Email Addresses...">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control rounded-3" id="exampleInputCompany1"
+                                    placeholder="Company name...">
+                            </div>
+                            <div class="mb-3">
+                                <input type="url" class="form-control rounded-3" id="exampleInputWebsite1" placeholder="Website...">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control rounded-3" id="exampleTextArea1" rows="3"
+                                    placeholder="Message..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="contact-us-footer">
+        <form class="position-relative">
+            <div class="subscribe position-absolute">
+                <input type="text" class="subscribe-input form-control" placeholder="Enter your email to subscribe..."
+                    aria-label="subscribe" aria-describedby="basic-addon1">
+                <button class="subscribe-button btn btn-primary">Subscribe</button>
+                <p class="error text-danger d-none">Please, enter valid email...</p>
+                <p class="success text-success d-none ">You are subscribe successfully.</p>
+            </div>
+        </form>
+        <div class="social-content position-relative">
+            <div class="soical-media position-absolute">
+                <a href="#navbar"><i class="fa-brands fa-facebook-f"></i></>
+                    <a href="#navbar"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#navbar"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#navbar"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+        <p class="text-white text-center position-relative">&copy; Copyright <span class="copy-right"></span> Company name.
+            Designed by Themezy. All rights reserved</p>
+    </footer>
+    <script src="assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="assets/JS/index.js"></script>
+</body>
+</html>
