@@ -543,8 +543,16 @@ footer p {
         bottom: -1100px;
         overflow: visible;
     }
+}
+@media (max-width:580px) {
     #navbarSupportedContent {
         width: 90% !important;
-        margin-left: 20px;
-    }
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+}
 }
